@@ -1,0 +1,26 @@
+import pandas as pd
+import numpy as np
+
+data = pd.read_csv("C:/Users/morea/Downloads/records_miss.csv")
+
+print(data)
+
+#Filling missing values
+
+updated_data=data
+updated_data['Salary']=updated_data['Salary'].fillna(updated_data['Salary'].mean())
+print(updated_data)
+
+#Imputation adding column
+
+updated_data=data
+updated_data['Salaryis missing']=updated_data['Salary'].isnull()
+print(updated_data)
+
+#Filling Regression model
+
+testdata = data[data['Salary'].isnull()==True]
+traindata = data[data['Salary'].isnull()==False]
+traindata.drop("Salary",axis=1,inplace=True)
+testdata.drop("Salary",axis=1,inplace=True)
+print(traindata)
