@@ -1,0 +1,19 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+plt.plot([1,2,3,4])
+plt.ylabel("Y-axis")
+plt.xlabel("X-axis")
+plt.show()
+
+names=['a','b','c']
+values = [5,20,100]
+plt.bar(names,values)
+plt.show()
+
+cars = ["AUDI","MERCEDISE","LAMBORGINI","JAGUAR"]
+data = [12,34,56,76]
+fig = plt.figure(figsize = (12,6))
+plt.pie(data,labels=cars)
+plt.show()
