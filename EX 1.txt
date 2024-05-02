@@ -1,7 +1,6 @@
 import pandas as pd
 
-data =
- {"Roll-num":[10,20,30,40,50,60,70],"Age":[12,14,13,12,14,13,15],"Name":['Akshada','Aastha','Gauri','Pranali','Reshma','Shreya','Sakshi']}
+data = {"Roll-num":[10,20,30,40,50,60,70],"Age":[12,14,13,12,14,13,15],"Name":['Akshada','Aastha','Gauri','Pranali','Reshma','Shreya','Sakshi']}
 
 block = pd.DataFrame(data)
 
